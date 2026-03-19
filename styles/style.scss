@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Unbounded:wght@200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.833vw;
+  scroll-behavior: smooth;
+  font-family: "Unbounded", "Russo One", "Manrope", "Montserrat", sans-serif;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  cursor: default;
+  color: #fff;
+}
+
+nav a {
+  text-decoration: none;
+  border: 0.125rem solid #fff;
+  padding: 0.625rem 1rem;
+  border-radius: 1.0625rem;
+  font-family: "Russo One";
+  font-weight: 400;
+  font-size: 1.25rem;
+  transition: 150ms ease-in;
+  color: #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: #000000;
+    box-shadow: 0 0 1.5rem #ffffff75;
+  }
+  &:active {
+    transition: 100ms;
+    transform: scale(99%);
+  }
+}
+
+button {
+  transition: 150ms ease-in;
+  cursor: pointer;
+  font-family: "Unbounded";
+}
+button:active {
+  transform: scale(99%);
+}
+
+.white-btn:hover {
+  background-color: #666666;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  width: 46.5625rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5625rem;
+  input,
+  textarea {
+    width: inherit;
+    height: 3.9375rem;
+    border: 0.1563rem solid #ababab;
+    padding: 1.3125rem 2.1125rem;
+    border-radius: 2.5rem;
+    transition: 150ms ease-in;
+    font-size: 1.25rem;
+    font-family: "Manrope";
+
+    &:hover {
+      border-color: #666666;
+    }
+    &:focus {
+      outline: solid 0.1563rem #0019ff;
+      border: none;
+      box-shadow: 0 0 0.75rem #001aff3d;
+    }
+  }
+  textarea {
+    height: 11.75rem;
+    resize: none;
+  }
+  textarea::placeholder {
+    font-size: 1.5625rem;
+  }
+}
+
+.div-animatiom:hover {
+  border-color: #0019ff !important;
+}
+.div-animatiom:active .animation-p {
+  color: #0019ff !important;
+}
+
+.footer-nav a {
+  all: initial !important;
+  font-family: "Manrope" !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  transition: 150ms ease !important;
+}
+
+.footer-nav a:hover {
+  color: #0019ff !important;
+}
+
+.card:hover {
+  cursor: pointer !important;
+  transform: scale(102%) !important;
+  transition: 150ms ease-out !important;
+  box-shadow: 0 0 0.875rem #00000041;
+}
