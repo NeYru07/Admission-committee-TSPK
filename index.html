@@ -9,6 +9,8 @@
       href="./assets/svg/Logo.svg"
       type="image/x-icon"
     />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.maskedinput.min.js"></script>
     <title>Приемная комиссия ТСПК</title>
   </head>
   <body>
@@ -336,8 +338,8 @@
           Подача документов
         </h1>
         <form action="reg">
-          <input type="text" maxlength="20" required placeholder="ИМЯ" />
-          <input type="text" maxlength="10" required placeholder="ГРУППА" />
+          <input type="email" maxlength="100" required placeholder="ПОЧТА"/>
+          <input type="tel" maxlength="10" required placeholder="НОМЕР ТЕЛЕФОНА" class="mask-phone form-control"/>
           <textarea
             name="comment"
             id="comm"
@@ -400,6 +402,8 @@
             Прикрепить файл c документами
           </p>
         </div>
+        <button class="send" style="border: none; background-color: #272727; padding: 2.1112rem 2.975rem; border-radius: 2.5rem;
+        font-family: 'Manrope'; font-weight: 800; font-size: 1.5625rem; color: #fff;">Отправить заявку</button>
       </div>
     </section>
 
@@ -799,7 +803,7 @@
         "
       >
         <h2 style="font-weight: 700; font-size: 2rem; padding-left: 1.5rem">
-          Рэйтинг популярных специальностей
+          Рейтинг популярных специальностей
         </h2>
         <div style="display: flex; flex-direction: column; gap: 1.5rem">
           <div
@@ -907,7 +911,7 @@
       <img
         src="./assets/images/charts.png"
         alt="Charts"
-        style="width: max-content; height: max-content"
+        style="width: 55.9375rem; height: 40.9375rem;"
       />
     </section>
 
@@ -1099,4 +1103,8 @@
       </div>
     </footer>
   </body>
+  <script>
+  $.mask.definitions['h'] = "[0|1|3|4|5|6|7|9]";
+  $(".mask-phone").mask("+7 (h99) 999-99-99");
+  </script>
 </html>

@@ -127,4 +127,8 @@ form textarea::placeholder {
   transform: scale(102%) !important;
   transition: 150ms ease-out !important;
   box-shadow: 0 0 0.875rem rgba(0, 0, 0, 0.2549019608);
+}
+
+.send:hover {
+  background-color: #000000 !important;
 }/*# sourceMappingURL=style.css.map */
